@@ -1,0 +1,9 @@
+@mixin animacionLogo() {
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.705);
+}
+@mixin animacionLabel() {
+    box-shadow:0 0 25px rgba(255, 255, 255, 0.705);
+    background-position:50%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    cursor: pointer;
+}

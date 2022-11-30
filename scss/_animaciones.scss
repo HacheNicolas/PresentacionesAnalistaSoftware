@@ -1,0 +1,49 @@
+.headerColor{
+    a{
+        &:hover{
+            @include animacionLogo;
+        }
+        &:focus{
+            @include animacionLogo;
+        }
+    }
+}
+.footerColor{
+    img{
+        &:hover{
+            @include animacionLogo;
+        }
+        &:focus{
+            @include animacionLogo;
+        }
+    }
+}
+.contenedor{
+    .presentaciones{
+        .circulos{
+            .circulo{
+                label{
+                    &:hover{
+                        @include animacionLabel;
+                    }
+                    &:focus{
+                        @include animacionLabel;
+                    }
+                }
+                .documentacion{
+                    .cont{
+                        a{
+                            &:hover{
+                                @include animacionLabel;
+                            }
+                            &:focus{
+                                @include animacionLabel;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

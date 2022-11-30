@@ -1,0 +1,10 @@
+/* Estilo del footer */
+.footerColor{
+    background-color: map-get($colores, secundarioDeg);
+    border-bottom: map-get($bordes, negro);
+    height: 150px;
+    color: map-get($colores , blanco);
+    img{
+        border: 1px solid map-get($colores , negro);
+    }
+}

@@ -1,0 +1,265 @@
+/* Cuando el ancho de la pantalla es menor a 1350px */
+@media screen and (max-width: 1349px) {
+    .col-5{
+        width: 50%;
+    }
+    .contenedor{
+        height: 1060px;
+        .presentaciones{
+            height: 920px;
+            .circulos{
+                .circulo{
+                    width: 400px;
+                    .documentacion{
+                        width: 400px;
+                        height: 700px;
+                        .cont{
+                            img,video{
+                                width: 300px;
+                            }
+                            embed{
+                                width: 350px;
+                                height: 400px;
+                            }
+                        }
+                    }
+                }
+                .circuloBGLA{
+                    transform: translate3d(-200px,-450px,0);
+                    .documentacion{
+                        transform: translate3d(0,500px,0);
+                    }
+                }
+                .circuloCG{
+                    transform: translate3d(-400px,-350px,0);
+                    .documentacion{
+                        transform: translate3d(200px,400px,0);
+                    }
+                }
+                .circuloGC{
+                    transform: translate3d(-550px,-200px,0);
+                    .documentacion{
+                        transform: translate3d(350px,250px,0);
+                    }
+                }
+                .circuloJP{
+                    transform: translate3d(-650px,0,0);
+                    .documentacion{
+                        transform: translate3d(450px,50px,0);
+                    }
+                }
+                .circuloLP{
+                    transform: translate3d(-550px,200px,0);
+                    .documentacion{
+                        transform: translate3d(350px,-150px,0);
+                    }
+                }
+                .circuloLAM{
+                    transform: translate3d(-400px,350px,0);
+                    .documentacion{
+                        transform: translate3d(200px,-300px,0);
+                    }
+                }
+                .circuloMEA{
+                    transform: translate3d(-200px,450px,0);
+                    .documentacion{
+                        transform: translate3d(0,-400px,0);
+                    }
+                }
+                .circuloMG{
+                    transform: translate3d(0,350px,0);
+                    .documentacion{
+                        transform: translate3d(-200px,-300px,0);
+                    }
+                }
+                .circuloMNP{
+                    transform: translate3d(150px,200px,0);
+                    .documentacion{
+                        transform: translate3d(-350px,-150px,0);
+                    }
+                }
+                .circuloMR{
+                    transform: translate3d(250px,0,0);
+                    .documentacion{
+                        transform: translate3d(-450px,50px,0);
+                    }
+                }
+                .circuloNAH{
+                    transform: translate3d(150px,-200px,0);
+                    .documentacion{
+                        transform: translate3d(-350px,250px,0);
+                    }
+                }
+                .circuloYBG{
+                    transform: translate3d(0,-350px,0);
+                    .documentacion{
+                        transform: translate3d(-200px,400px,0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Cuando el ancho de la pantalla es menor a 1024px (tablet o celular) */
+@media screen and (max-width: 1023px) {
+    .headerColor{
+        padding: 4px;
+        div{
+            width: 100%;
+            a{
+                width: 40%;
+                max-width: 250px;
+                justify-content: center;
+                img{
+                    width: 100%;
+                }
+            }
+            div{
+                width: 50%;
+                justify-content: center;
+                h1{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+    .contenedor{
+        height: auto;
+        .presentaciones{
+            height: auto;
+            .circulos{
+                position: initial;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                .circulo{
+                    position:initial;
+                    width:100%;
+                    height:auto;
+                    top:0;
+                    left:0;
+                    transform-origin: initial;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    label{
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: map-get($colores , gris);
+                        box-shadow:0 0 10px rgba(255, 255, 255, 0.705);
+                        border-radius:4px;
+                        border: 1px solid map-get($colores , blanco);
+                        width:100%;
+                        height:40px;
+                        top:0;
+                        left:0;
+                    }
+                    .documentacion{
+                        width: 100%;
+                        height: auto;
+                        position: initial;
+                        display: none;
+                        .cont{
+                            img,video{
+                                width: 100%;
+                            }
+                            embed{
+                                width: 100%;
+                                height: 50vh;
+                            }
+                        }
+                    }
+                }
+                .circuloBGLA{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloCG{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloGC{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloJP{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloLP{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloLAM{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloMEA{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloMG{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloMNP{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloMR{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloNAH{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+                .circuloYBG{
+                    transform:initial;
+                    .documentacion{
+                        transform:initial;
+                    }
+                }
+            }
+        }
+    }
+    .footerColor{
+        height: auto;
+        padding: 4px;
+        .col-5{
+            width: 65%;
+            justify-content: center;
+        }
+        .col-2{
+            width: 20%;
+            justify-content: center;
+        }
+    }
+}

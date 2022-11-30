@@ -1,0 +1,10 @@
+/* Estilo del header */
+.headerColor{
+    background-color: map-get($colores, secundarioDeg);
+    border-bottom: map-get($bordes, negro);
+   a{
+    background-color: map-get($colores , blanco) ;
+    border: 1px solid map-get($colores , negro);
+    border-radius:$radio;
+   }
+}

@@ -1,0 +1,220 @@
+.contenedor{
+    margin: 10px;
+    padding: 10px;
+    background: $fondoPrincipal;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $radio;
+    text-align: center;
+    height: 1480px;
+    a{
+        text-decoration: none;
+        background-color: map-get($colores, secundario);
+        color: map-get($colores , blanco);
+        padding: 3px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .presentaciones{
+        height: 1300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circulos{
+            position:relative;
+            .circulo{
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                transform-origin:center;
+                position:absolute;
+                width:600px;
+                height:114px;
+                top:8px;
+                left:8px;
+                label{
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: map-get($colores , gris);
+                    box-shadow:0 0 10px rgba(255, 255, 255, 0.705);
+                    border-radius:50%;
+                    border: 1px solid map-get($colores , blanco);
+                    width:114px;
+                    height:114px;
+                    top:8px;
+                    left:8px;
+                }
+                input[type=checkbox]{
+                    display: none;
+                    &:checked ~ .documentacion{
+                        visibility: visible;
+                        display: initial;
+                    }
+                    &:checked~label{
+                        background-color: map-get($colores, secundario);
+                        color: map-get($colores , blanco);
+                    }
+                }
+                .documentacion{
+                    position: absolute;
+                    visibility: hidden;
+                    display: none;
+                    width: 600px;
+                    height: 900px;
+                    input[type=radio]{
+                        display: none;
+                    }
+                    .cont{
+                        left: 0;
+                        position: absolute;
+                        top: -26px;
+                        transform: scale(0);
+                        z-index: -1;
+                        background-color: map-get($colores , blancoDeg);
+                        border-radius: 4px;
+                        box-shadow: 0 15px 23px map-get($colores , negro);
+                        display: flex;
+                    }
+                    [id=flyerBGLA]:checked~nav [for=flyerBGLA],[id=pitchBGLA]:checked~nav [for=pitchBGLA],[id=informeBGLA]:checked~nav [for=informeBGLA],
+                    [id=flyerCG]:checked~nav [for=flyerCG],[id=pitchCG]:checked~nav [for=pitchCG],[id=informeCG]:checked~nav [for=informeCG],
+                    [id=flyerGC]:checked~nav [for=flyerGC],[id=pitchGC]:checked~nav [for=pitchGC],[id=informeGC]:checked~nav [for=informeGC],
+                    [id=flyerJP]:checked~nav [for=flyerJP],[id=pitchJP]:checked~nav [for=pitchJP],[id=informeJP]:checked~nav [for=informeJP],
+                    [id=flyerLP]:checked~nav [for=flyerLP],[id=pitchLP]:checked~nav [for=pitchLP],[id=informeLP]:checked~nav [for=informeLP],
+                    [id=flyerLAM]:checked~nav [for=flyerLAM],[id=pitchLAM]:checked~nav [for=pitchLAM],[id=informeLAM]:checked~nav [for=informeLAM],
+                    [id=flyerMEA]:checked~nav [for=flyerMEA],[id=pitchMEA]:checked~nav [for=pitchMEA],[id=informeMEA]:checked~nav [for=informeMEA],
+                    [id=flyerMG]:checked~nav [for=flyerMG],[id=pitchMG]:checked~nav [for=pitchMG],[id=informeMG]:checked~nav [for=informeMG],
+                    [id=flyerMNP]:checked~nav [for=flyerMNP],[id=pitchMNP]:checked~nav [for=pitchMNP],[id=informeMNP]:checked~nav [for=informeMNP],
+                    [id=flyerMR]:checked~nav [for=flyerMR],[id=pitchMR]:checked~nav [for=pitchMR],[id=informeMR]:checked~nav [for=informeMR],
+                    [id=flyerNAH]:checked~nav [for=flyerNAH],[id=pitchNAH]:checked~nav [for=pitchNAH],[id=informeNAH]:checked~nav [for=informeNAH],
+                    [id=flyerYBG]:checked~nav [for=flyerYBG],[id=pitchYBG]:checked~nav [for=pitchYBG],[id=informeYBG]:checked~nav [for=informeYBG]{  
+                        background-color: map-get($colores, secundario);
+                        color: map-get($colores , blanco);
+                    }
+                    [id=flyerBGLA]:checked~.flyerBGLAContenido,[id=pitchBGLA]:checked~.pitchBGLAContenido,[id=informeBGLA]:checked~.informeBGLAContenido,
+                    [id=flyerCG]:checked~.flyerCGContenido,[id=pitchCG]:checked~.pitchCGContenido,[id=informeCG]:checked~.informeCGContenido,
+                    [id=flyerGC]:checked~.flyerGCContenido,[id=pitchGC]:checked~.pitchGCContenido,[id=informeGC]:checked~.informeGCContenido,
+                    [id=flyerJP]:checked~.flyerJPContenido,[id=pitchJP]:checked~.pitchJPContenido,[id=informeJP]:checked~.informeJPContenido,
+                    [id=flyerLP]:checked~.flyerLPContenido,[id=pitchLP]:checked~.pitchLPContenido,[id=informeLP]:checked~.informeLPContenido,
+                    [id=flyerLAM]:checked~.flyerLAMContenido,[id=pitchLAM]:checked~.pitchLAMContenido,[id=informeLAM]:checked~.informeLAMContenido,
+                    [id=flyerMEA]:checked~.flyerMEAContenido,[id=pitchMEA]:checked~.pitchMEAContenido,[id=informeMEA]:checked~.informeMEAContenido,
+                    [id=flyerMG]:checked~.flyerMGContenido,[id=pitchMG]:checked~.pitchMGContenido,[id=informeMG]:checked~.informeMGContenido,
+                    [id=flyerMNP]:checked~.flyerMNPContenido,[id=pitchMNP]:checked~.pitchMNPContenido,[id=informeMNP]:checked~.informeMNPContenido,
+                    [id=flyerMR]:checked~.flyerMRContenido,[id=pitchMR]:checked~.pitchMRContenido,[id=informeMR]:checked~.informeMRContenido,
+                    [id=flyerNAH]:checked~.flyerNAHContenido,[id=pitchNAH]:checked~.pitchNAHContenido,[id=informeNAH]:checked~.informeNAHContenido,
+                    [id=flyerYBG]:checked~.flyerYBGContenido,[id=pitchYBG]:checked~.pitchYBGContenido,[id=informeYBG]:checked~.informeYBGContenido{
+                        display: block;
+                        position: relative;
+                        top: 0;
+                        transform: scale(1);
+                        transition: top .25s ease-out;
+                        z-index: 10
+                    }
+                    .navegacionRadio{
+                        background-color: map-get($colores , blancoDeg);
+                        border-radius: 4px;
+                        box-shadow: 0 15px 23px rgba(0,0,0,.08);
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        padding: 8px 16px;
+                        
+                        label{
+                            border-radius: 0%;
+                            width: 150px;
+                            height: 50px;
+                        }
+                    }
+                }
+                p{
+                    transform-origin:50% 50%;
+                    width:70%;
+                    position:relative;
+                    transition:opacity .25s ease-in .4s,
+                    transform 1s cubic-bezier(.38, .49, 0, 1.08) .4s
+                }
+            }
+            .circuloBGLA{
+                transform: translate3d(-300px,-600px,0);
+                .documentacion{
+                    transform: translate3d(0,600px,0);
+                }
+            }
+            .circuloCG{
+                transform: translate3d(-600px,-500px,0);
+                .documentacion{
+                    transform: translate3d(300px,500px,0);
+                }
+            }
+            .circuloGC{
+                transform: translate3d(-800px,-300px,0);
+                .documentacion{
+                    transform: translate3d(500px,300px,0);
+                }
+            }
+            .circuloJP{
+                transform: translate3d(-900px,0,0);
+                .documentacion{
+                    transform: translate3d(600px,0,0);
+                }
+            }
+            .circuloLP{
+                transform: translate3d(-800px,300px,0);
+                .documentacion{
+                    transform: translate3d(500px,-300px,0);
+                }
+            }
+            .circuloLAM{
+                transform: translate3d(-600px,500px,0);
+                .documentacion{
+                    transform: translate3d(300px,-500px,0);
+                }
+            }
+            .circuloMEA{
+                transform: translate3d(-300px,600px,0);
+                .documentacion{
+                    transform: translate3d(0,-600px,0);
+                }
+            }
+            .circuloMG{
+                transform: translate3d(0,500px,0);
+                .documentacion{
+                    transform: translate3d(-300px,-500px,0);
+                }
+            }
+            .circuloMNP{
+                transform: translate3d(200px,300px,0);
+                .documentacion{
+                    transform: translate3d(-500px,-300px,0);
+                }
+            }
+            .circuloMR{
+                transform: translate3d(300px,0,0);
+                .documentacion{
+                    transform: translate3d(-600px,0,0);
+                }
+            }
+            .circuloNAH{
+                transform: translate3d(200px,-300px,0);
+                .documentacion{
+                    transform: translate3d(-500px,300px,0);
+                }
+            }
+            .circuloYBG{
+                transform: translate3d(0,-500px,0);
+                .documentacion{
+                    transform: translate3d(-300px,500px,0);
+                }
+            }
+        }
+    }
+    
+}

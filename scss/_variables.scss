@@ -1,0 +1,19 @@
+$fondoPrincipal: url(../img/fondo.jpg);
+$radio: 8px;
+
+$colores:(
+    //primario: #748CAB,
+    primario: #004d7a,
+    secundario: #008793,
+    secundarioDeg: #008793a2,
+    terciario: #6CC551, 
+    gris: rgb(122, 122, 122),
+    blanco: #F7F7F7,
+    blancoDeg:#f7f7f7c0,
+    negro: #1b1c1d,
+);
+
+$bordes:(
+    negro:  1px solid black,
+    blanco: 1px solid white,
+);

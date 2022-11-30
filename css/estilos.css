@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: auto;
+  max-width: 100vw;
+  background-color: #1b1c1d; }
+
+/* Estilo del header */
+.headerColor {
+  background-color: #008793a2;
+  border-bottom: 1px solid black; }
+  .headerColor a {
+    background-color: #F7F7F7;
+    border: 1px solid #1b1c1d;
+    border-radius: 8px; }
+
+.contenedor {
+  margin: 10px;
+  padding: 10px;
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  text-align: center;
+  height: 1480px; }
+  .contenedor a {
+    text-decoration: none;
+    background-color: #008793;
+    color: #F7F7F7;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none; }
+  .contenedor .presentaciones {
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedor .presentaciones .circulos {
+      position: relative; }
+      .contenedor .presentaciones .circulos .circulo {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: center;
+        position: absolute;
+        width: 600px;
+        height: 114px;
+        top: 8px;
+        left: 8px; }
+        .contenedor .presentaciones .circulos .circulo label {
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #7a7a7a;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
+          border-radius: 50%;
+          border: 1px solid #F7F7F7;
+          width: 114px;
+          height: 114px;
+          top: 8px;
+          left: 8px; }
+        .contenedor .presentaciones .circulos .circulo input[type=checkbox] {
+          display: none; }
+          .contenedor .presentaciones .circulos .circulo input[type=checkbox]:checked ~ .documentacion {
+            visibility: visible;
+            display: initial; }
+          .contenedor .presentaciones .circulos .circulo input[type=checkbox]:checked ~ label {
+            background-color: #008793;
+            color: #F7F7F7; }
+        .contenedor .presentaciones .circulos .circulo .documentacion {
+          position: absolute;
+          visibility: hidden;
+          display: none;
+          width: 600px;
+          height: 900px; }
+          .contenedor .presentaciones .circulos .circulo .documentacion input[type=radio] {
+            display: none; }
+          .contenedor .presentaciones .circulos .circulo .documentacion .cont {
+            left: 0;
+            position: absolute;
+            top: -26px;
+            transform: scale(0);
+            z-index: -1;
+            background-color: #f7f7f7c0;
+            border-radius: 4px;
+            box-shadow: 0 15px 23px #1b1c1d;
+            display: flex; }
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerBGLA]:checked ~ nav [for=flyerBGLA], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchBGLA]:checked ~ nav [for=pitchBGLA], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeBGLA]:checked ~ nav [for=informeBGLA],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerCG]:checked ~ nav [for=flyerCG], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchCG]:checked ~ nav [for=pitchCG], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeCG]:checked ~ nav [for=informeCG],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerGC]:checked ~ nav [for=flyerGC], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchGC]:checked ~ nav [for=pitchGC], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeGC]:checked ~ nav [for=informeGC],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerJP]:checked ~ nav [for=flyerJP], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchJP]:checked ~ nav [for=pitchJP], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeJP]:checked ~ nav [for=informeJP],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerLP]:checked ~ nav [for=flyerLP], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchLP]:checked ~ nav [for=pitchLP], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeLP]:checked ~ nav [for=informeLP],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerLAM]:checked ~ nav [for=flyerLAM], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchLAM]:checked ~ nav [for=pitchLAM], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeLAM]:checked ~ nav [for=informeLAM],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMEA]:checked ~ nav [for=flyerMEA], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMEA]:checked ~ nav [for=pitchMEA], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMEA]:checked ~ nav [for=informeMEA],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMG]:checked ~ nav [for=flyerMG], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMG]:checked ~ nav [for=pitchMG], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMG]:checked ~ nav [for=informeMG],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMNP]:checked ~ nav [for=flyerMNP], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMNP]:checked ~ nav [for=pitchMNP], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMNP]:checked ~ nav [for=informeMNP],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMR]:checked ~ nav [for=flyerMR], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMR]:checked ~ nav [for=pitchMR], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMR]:checked ~ nav [for=informeMR],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerNAH]:checked ~ nav [for=flyerNAH], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchNAH]:checked ~ nav [for=pitchNAH], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeNAH]:checked ~ nav [for=informeNAH],
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerYBG]:checked ~ nav [for=flyerYBG], .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchYBG]:checked ~ nav [for=pitchYBG], .contenedor .presentaciones .circulos .circulo .documentacion [id=informeYBG]:checked ~ nav [for=informeYBG] {
+            background-color: #008793;
+            color: #F7F7F7; }
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerBGLA]:checked ~ .flyerBGLAContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchBGLA]:checked ~ .pitchBGLAContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeBGLA]:checked ~ .informeBGLAContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerCG]:checked ~ .flyerCGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchCG]:checked ~ .pitchCGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeCG]:checked ~ .informeCGContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerGC]:checked ~ .flyerGCContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchGC]:checked ~ .pitchGCContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeGC]:checked ~ .informeGCContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerJP]:checked ~ .flyerJPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchJP]:checked ~ .pitchJPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeJP]:checked ~ .informeJPContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerLP]:checked ~ .flyerLPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchLP]:checked ~ .pitchLPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeLP]:checked ~ .informeLPContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerLAM]:checked ~ .flyerLAMContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchLAM]:checked ~ .pitchLAMContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeLAM]:checked ~ .informeLAMContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMEA]:checked ~ .flyerMEAContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMEA]:checked ~ .pitchMEAContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMEA]:checked ~ .informeMEAContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMG]:checked ~ .flyerMGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMG]:checked ~ .pitchMGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMG]:checked ~ .informeMGContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMNP]:checked ~ .flyerMNPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMNP]:checked ~ .pitchMNPContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMNP]:checked ~ .informeMNPContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerMR]:checked ~ .flyerMRContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchMR]:checked ~ .pitchMRContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeMR]:checked ~ .informeMRContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerNAH]:checked ~ .flyerNAHContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchNAH]:checked ~ .pitchNAHContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeNAH]:checked ~ .informeNAHContenido,
+          .contenedor .presentaciones .circulos .circulo .documentacion [id=flyerYBG]:checked ~ .flyerYBGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=pitchYBG]:checked ~ .pitchYBGContenido, .contenedor .presentaciones .circulos .circulo .documentacion [id=informeYBG]:checked ~ .informeYBGContenido {
+            display: block;
+            position: relative;
+            top: 0;
+            transform: scale(1);
+            transition: top .25s ease-out;
+            z-index: 10; }
+          .contenedor .presentaciones .circulos .circulo .documentacion .navegacionRadio {
+            background-color: #f7f7f7c0;
+            border-radius: 4px;
+            box-shadow: 0 15px 23px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            padding: 8px 16px; }
+            .contenedor .presentaciones .circulos .circulo .documentacion .navegacionRadio label {
+              border-radius: 0%;
+              width: 150px;
+              height: 50px; }
+        .contenedor .presentaciones .circulos .circulo p {
+          transform-origin: 50% 50%;
+          width: 70%;
+          position: relative;
+          transition: opacity 0.25s ease-in 0.4s, transform 1s cubic-bezier(0.38, 0.49, 0, 1.08) 0.4s; }
+      .contenedor .presentaciones .circulos .circuloBGLA {
+        transform: translate3d(-300px, -600px, 0); }
+        .contenedor .presentaciones .circulos .circuloBGLA .documentacion {
+          transform: translate3d(0, 600px, 0); }
+      .contenedor .presentaciones .circulos .circuloCG {
+        transform: translate3d(-600px, -500px, 0); }
+        .contenedor .presentaciones .circulos .circuloCG .documentacion {
+          transform: translate3d(300px, 500px, 0); }
+      .contenedor .presentaciones .circulos .circuloGC {
+        transform: translate3d(-800px, -300px, 0); }
+        .contenedor .presentaciones .circulos .circuloGC .documentacion {
+          transform: translate3d(500px, 300px, 0); }
+      .contenedor .presentaciones .circulos .circuloJP {
+        transform: translate3d(-900px, 0, 0); }
+        .contenedor .presentaciones .circulos .circuloJP .documentacion {
+          transform: translate3d(600px, 0, 0); }
+      .contenedor .presentaciones .circulos .circuloLP {
+        transform: translate3d(-800px, 300px, 0); }
+        .contenedor .presentaciones .circulos .circuloLP .documentacion {
+          transform: translate3d(500px, -300px, 0); }
+      .contenedor .presentaciones .circulos .circuloLAM {
+        transform: translate3d(-600px, 500px, 0); }
+        .contenedor .presentaciones .circulos .circuloLAM .documentacion {
+          transform: translate3d(300px, -500px, 0); }
+      .contenedor .presentaciones .circulos .circuloMEA {
+        transform: translate3d(-300px, 600px, 0); }
+        .contenedor .presentaciones .circulos .circuloMEA .documentacion {
+          transform: translate3d(0, -600px, 0); }
+      .contenedor .presentaciones .circulos .circuloMG {
+        transform: translate3d(0, 500px, 0); }
+        .contenedor .presentaciones .circulos .circuloMG .documentacion {
+          transform: translate3d(-300px, -500px, 0); }
+      .contenedor .presentaciones .circulos .circuloMNP {
+        transform: translate3d(200px, 300px, 0); }
+        .contenedor .presentaciones .circulos .circuloMNP .documentacion {
+          transform: translate3d(-500px, -300px, 0); }
+      .contenedor .presentaciones .circulos .circuloMR {
+        transform: translate3d(300px, 0, 0); }
+        .contenedor .presentaciones .circulos .circuloMR .documentacion {
+          transform: translate3d(-600px, 0, 0); }
+      .contenedor .presentaciones .circulos .circuloNAH {
+        transform: translate3d(200px, -300px, 0); }
+        .contenedor .presentaciones .circulos .circuloNAH .documentacion {
+          transform: translate3d(-500px, 300px, 0); }
+      .contenedor .presentaciones .circulos .circuloYBG {
+        transform: translate3d(0, -500px, 0); }
+        .contenedor .presentaciones .circulos .circuloYBG .documentacion {
+          transform: translate3d(-300px, 500px, 0); }
+
+/* Estilo del footer */
+.footerColor {
+  background-color: #008793a2;
+  border-bottom: 1px solid black;
+  height: 150px;
+  color: #F7F7F7; }
+  .footerColor img {
+    border: 1px solid #1b1c1d; }
+
+.headerColor a:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); }
+
+.headerColor a:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); }
+
+.footerColor img:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); }
+
+.footerColor img:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); }
+
+.contenedor .presentaciones .circulos .circulo label:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.705);
+  background-position: 50%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  cursor: pointer; }
+
+.contenedor .presentaciones .circulos .circulo label:focus {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.705);
+  background-position: 50%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  cursor: pointer; }
+
+.contenedor .presentaciones .circulos .circulo .documentacion .cont a:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.705);
+  background-position: 50%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  cursor: pointer; }
+
+.contenedor .presentaciones .circulos .circulo .documentacion .cont a:focus {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.705);
+  background-position: 50%;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  cursor: pointer; }
+
+/* Cuando el ancho de la pantalla es menor a 1350px */
+@media screen and (max-width: 1349px) {
+  .col-5 {
+    width: 50%; }
+  .contenedor {
+    height: 1060px; }
+    .contenedor .presentaciones {
+      height: 920px; }
+      .contenedor .presentaciones .circulos .circulo {
+        width: 400px; }
+        .contenedor .presentaciones .circulos .circulo .documentacion {
+          width: 400px;
+          height: 700px; }
+          .contenedor .presentaciones .circulos .circulo .documentacion .cont img, .contenedor .presentaciones .circulos .circulo .documentacion .cont video {
+            width: 300px; }
+          .contenedor .presentaciones .circulos .circulo .documentacion .cont embed {
+            width: 350px;
+            height: 400px; }
+      .contenedor .presentaciones .circulos .circuloBGLA {
+        transform: translate3d(-200px, -450px, 0); }
+        .contenedor .presentaciones .circulos .circuloBGLA .documentacion {
+          transform: translate3d(0, 500px, 0); }
+      .contenedor .presentaciones .circulos .circuloCG {
+        transform: translate3d(-400px, -350px, 0); }
+        .contenedor .presentaciones .circulos .circuloCG .documentacion {
+          transform: translate3d(200px, 400px, 0); }
+      .contenedor .presentaciones .circulos .circuloGC {
+        transform: translate3d(-550px, -200px, 0); }
+        .contenedor .presentaciones .circulos .circuloGC .documentacion {
+          transform: translate3d(350px, 250px, 0); }
+      .contenedor .presentaciones .circulos .circuloJP {
+        transform: translate3d(-650px, 0, 0); }
+        .contenedor .presentaciones .circulos .circuloJP .documentacion {
+          transform: translate3d(450px, 50px, 0); }
+      .contenedor .presentaciones .circulos .circuloLP {
+        transform: translate3d(-550px, 200px, 0); }
+        .contenedor .presentaciones .circulos .circuloLP .documentacion {
+          transform: translate3d(350px, -150px, 0); }
+      .contenedor .presentaciones .circulos .circuloLAM {
+        transform: translate3d(-400px, 350px, 0); }
+        .contenedor .presentaciones .circulos .circuloLAM .documentacion {
+          transform: translate3d(200px, -300px, 0); }
+      .contenedor .presentaciones .circulos .circuloMEA {
+        transform: translate3d(-200px, 450px, 0); }
+        .contenedor .presentaciones .circulos .circuloMEA .documentacion {
+          transform: translate3d(0, -400px, 0); }
+      .contenedor .presentaciones .circulos .circuloMG {
+        transform: translate3d(0, 350px, 0); }
+        .contenedor .presentaciones .circulos .circuloMG .documentacion {
+          transform: translate3d(-200px, -300px, 0); }
+      .contenedor .presentaciones .circulos .circuloMNP {
+        transform: translate3d(150px, 200px, 0); }
+        .contenedor .presentaciones .circulos .circuloMNP .documentacion {
+          transform: translate3d(-350px, -150px, 0); }
+      .contenedor .presentaciones .circulos .circuloMR {
+        transform: translate3d(250px, 0, 0); }
+        .contenedor .presentaciones .circulos .circuloMR .documentacion {
+          transform: translate3d(-450px, 50px, 0); }
+      .contenedor .presentaciones .circulos .circuloNAH {
+        transform: translate3d(150px, -200px, 0); }
+        .contenedor .presentaciones .circulos .circuloNAH .documentacion {
+          transform: translate3d(-350px, 250px, 0); }
+      .contenedor .presentaciones .circulos .circuloYBG {
+        transform: translate3d(0, -350px, 0); }
+        .contenedor .presentaciones .circulos .circuloYBG .documentacion {
+          transform: translate3d(-200px, 400px, 0); } }
+
+/* Cuando el ancho de la pantalla es menor a 1024px (tablet o celular) */
+@media screen and (max-width: 1023px) {
+  .headerColor {
+    padding: 4px; }
+    .headerColor div {
+      width: 100%; }
+      .headerColor div a {
+        width: 40%;
+        max-width: 250px;
+        justify-content: center; }
+        .headerColor div a img {
+          width: 100%; }
+      .headerColor div div {
+        width: 50%;
+        justify-content: center; }
+        .headerColor div div h1 {
+          font-size: x-large; }
+  .contenedor {
+    height: auto; }
+    .contenedor .presentaciones {
+      height: auto; }
+      .contenedor .presentaciones .circulos {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center; }
+        .contenedor .presentaciones .circulos .circulo {
+          position: initial;
+          width: 100%;
+          height: auto;
+          top: 0;
+          left: 0;
+          transform-origin: initial;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          .contenedor .presentaciones .circulos .circulo label {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #7a7a7a;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
+            border-radius: 4px;
+            border: 1px solid #F7F7F7;
+            width: 100%;
+            height: 40px;
+            top: 0;
+            left: 0; }
+          .contenedor .presentaciones .circulos .circulo .documentacion {
+            width: 100%;
+            height: auto;
+            position: initial;
+            display: none; }
+            .contenedor .presentaciones .circulos .circulo .documentacion .cont img, .contenedor .presentaciones .circulos .circulo .documentacion .cont video {
+              width: 100%; }
+            .contenedor .presentaciones .circulos .circulo .documentacion .cont embed {
+              width: 100%;
+              height: 50vh; }
+        .contenedor .presentaciones .circulos .circuloBGLA {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloBGLA .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloCG {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloCG .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloGC {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloGC .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloJP {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloJP .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloLP {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloLP .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloLAM {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloLAM .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloMEA {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloMEA .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloMG {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloMG .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloMNP {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloMNP .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloMR {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloMR .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloNAH {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloNAH .documentacion {
+            transform: initial; }
+        .contenedor .presentaciones .circulos .circuloYBG {
+          transform: initial; }
+          .contenedor .presentaciones .circulos .circuloYBG .documentacion {
+            transform: initial; }
+  .footerColor {
+    height: auto;
+    padding: 4px; }
+    .footerColor .col-5 {
+      width: 65%;
+      justify-content: center; }
+    .footerColor .col-2 {
+      width: 20%;
+      justify-content: center; } }
